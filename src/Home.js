@@ -1,12 +1,11 @@
+import React from 'react'
 import { ChatEngine } from 'react-chat-engine'
 import './App.css'
 import LoginForm from './components/LoginForm'
 import ChatFeed from './components/ChatFeed'
-// import SignUp from './components/SignUp'
 
-const App = () => {
+function Home() {
     if(!localStorage.getItem('username')) return <LoginForm />
-    // if(!localStorage.getItem('username')) return <SignUp />
 
     return (
         <ChatEngine 
@@ -19,4 +18,4 @@ const App = () => {
     )
 }
 
-export default App;
+export default Home
